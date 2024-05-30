@@ -11,25 +11,6 @@ window.index_conversion.automatic_event = window.index_conversion.automatic_even
 
 #### Struktura pro událost "purchase"
 
-```json
-{
-    "name": "purchase",
-    "currency": "CZK",
-    "transaction_id": "12345",
-    "value": "1000.00",
-    "items": [
-        {
-            "id": "sku123",
-            "nm": "Product Name",
-            "pr": "250.00",
-            "qt": "4",
-            "ca": "Category1",
-            "c2": "Category2",
-            "br": "BrandName"
-        }
-    ]
-}
-```
 
 ```javascript
 window.index_conversion.automatic_event.push({
