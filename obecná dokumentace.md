@@ -1,0 +1,84 @@
+## Technická Specifikace pro `automatic_event`
+
+### Parametr `automatic_event`
+
+Objekt `index_conversion.automatic_event` obsahuje informace o událostech, které se automaticky zapisují. Tento dokument specifikuje strukturu objektu pro událost "purchase".
+
+```javascript
+window.index_conversion = window.index_conversion || {};
+window.index_conversion.automatic_event = window.index_conversion.automatic_event || [];
+```
+
+#### Struktura pro událost "purchase"
+
+```json
+{
+    "name": "purchase",
+    "currency": "CZK",
+    "transaction_id": "12345",
+    "value": "1000.00",
+    "items": [
+        {
+            "id": "sku123",
+            "nm": "Product Name",
+            "pr": "250.00",
+            "qt": "4",
+            "ca": "Category1",
+            "c2": "Category2",
+            "br": "BrandName"
+        }
+    ]
+}
+```
+
+```javascript
+window.index_conversion.automatic_event.push({
+    "name": "purchase",
+    "currency": "CZK",
+    "transaction_id": "12345",
+    "value": "1000.00",
+    "items": [
+        {
+            "id": "sku123",
+            "nm": "Product Name",
+            "pr": "250.00",
+            "qt": "4",
+            "ca": "Category1",
+            "c2": "Category2",
+            "br": "BrandName"
+        }
+    ]
+});
+```
+
+## Popis Polí
+
+### Hlavní Pole
+- `name` (string): Název události, v tomto případě "purchase".
+- `currency` (string): Měna transakce. Očekávané hodnoty jsou ve formátu ISO 4217 (např. "USD", "EUR", "CZK").
+- `transaction_id` (string): ID transakce.
+- `value` (string): Celková hodnota transakce.
+- `items` (array): Pole objektů obsahující informace o produktech.
+
+### Pole v items
+- `id` (string): ID produktu (SKU).
+- `nm` (string): Název produktu.
+- `pr` (string): Cena produktu.
+- `qt` (string): Množství produktu.
+- `ca`, `c2`, ... (string): Kategorie produktu (dynamicky přidávané; `ca` je první kategorie, `c2` je druhá kategorie, atd.).
+- `br` (string): Značka produktu.
+
+### Dostupné další eventy
+- `view_item_list` (string): Zobrazení produktů v kategorii.
+- `add_to_cart` (string): Přidání produktu do nákupního košíku.
+- `begin_checkout` (string): Zahájení procesu platby.
+- `purchase` (string): Dokončení nákupu.
+- `view_item` (string): Zobrazení jednoho produktu.
+
+
+
+## implementace javascriptové knihovny
+Načtení knihovny po nastavení dat do "automatic_event"
+```javascript
+<script type="text/javascript" src="https://app.[doména].cz/"></script>
+```
