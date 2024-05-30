@@ -59,7 +59,7 @@ window.index_conversion.automatic_event.push({
 
 
 ## implementace javascriptové knihovny
-Načtení knihovny po nastavení dat do "automatic_event"
+Načtení knihovny po nastavení dat do "automatic_event", ideálně na konec </body> na všechny stránky
 ```javascript
 <script type="text/javascript" src="https://app.[doména].cz/"></script>
 ```
