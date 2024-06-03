@@ -42,7 +42,7 @@ window.index_conversion.automatic_event.push({
 - `items` (array): Pole objektů obsahující informace o produktech.
 
 ### Pole v items
-- `id` (string): ID produktu (SKU).
+- `id` (string): ID produktu (SKU) ID produktu musí být shodná s ID v XML feedu.
 - `nm` (string): Název produktu.
 - `pr` (string): Cena produktu.
 - `qt` (string): Množství produktu.
