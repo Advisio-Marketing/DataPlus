@@ -56,6 +56,26 @@ window.index_conversion.automatic_event.push({
 - `purchase` (string): Dokončení nákupu.
 - `view_item` (string): Zobrazení jednoho produktu.
 
+#### Struktura pro událost dalších eventů
+
+```javascript
+window.index_conversion.automatic_event.push({
+    "name": "view_item",
+    "currency": "CZK",
+    "value": "1000.00",
+    "items": [
+        {
+            "id": "sku123",
+            "nm": "Product Name",
+            "pr": "250.00",
+            "qt": "4",
+            "ca": "Category1",
+            "c2": "Category2",
+            "br": "BrandName"
+        }
+    ]
+});
+```
 
 
 ## implementace javascriptové knihovny
