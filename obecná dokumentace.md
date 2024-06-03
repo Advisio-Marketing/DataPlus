@@ -53,7 +53,7 @@ window.index_conversion.automatic_event.push({
 - `ca`, `c2`, ... (string): Kategorie produktu (dynamicky přidávané; `ca` je první kategorie, `c2` je druhá kategorie, atd.).
 - `br` (string): Značka produktu.
 
-### Dostupné další eventy
+### Dostupné další eventy [nepovinné]
 - `view_item_list` (string): Zobrazení produktů v kategorii.
 - `add_to_cart` (string): Přidání produktu do nákupního košíku.
 - `begin_checkout` (string): Zahájení procesu platby.
@@ -81,8 +81,21 @@ window.index_conversion.automatic_event.push({
 });
 ```
 
+## Pro přidání informací o uživateli [nepovinné]
 
-## implementace javascriptové knihovny
+Tato část popisuje, jak přidat `user_data` do objektu `window.index_conversion`. Inicializujte objekt `user_data` s výchozím typem uživatele "b2c".
+
+```javascript
+window.index_conversion.user_data = {
+    user_type: "b2c",
+};
+```
+
+### Hlavní Pole
+- `user_data` (array): Pole objektů klíčových vlastností uživatelů.
+- `user_type` (string): Typ uživatele. Může nabývat hodnot "b2c" (business to consumer) nebo "b2b" (business to business).
+
+## Implementace javascriptové knihovny
 Načtení knihovny po nastavení dat do "automatic_event", ideálně na konec </body> na všechny stránky
 ```javascript
 <script type="text/javascript" src="https://app.[doména].cz/"></script>
