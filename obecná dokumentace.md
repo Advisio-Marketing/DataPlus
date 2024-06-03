@@ -18,6 +18,8 @@ window.index_conversion.automatic_event.push({
     "currency": "CZK",
     "transaction_id": "12345",
     "value": "1000.00",
+    "tax": "210.00",
+    "shipping": "100.00",
     "items": [
         {
             "id": "sku123",
@@ -39,6 +41,8 @@ window.index_conversion.automatic_event.push({
 - `currency` (string): Měna transakce. Očekávané hodnoty jsou ve formátu ISO 4217 (např. "USD", "EUR", "CZK").
 - `transaction_id` (string): ID transakce.
 - `value` (string): Celková hodnota transakce.
+- `shipping` (string): Celková hodnota dopravy.
+- `tax` (string): Celková hodnota daně.
 - `items` (array): Pole objektů obsahující informace o produktech.
 
 ### Pole v items
