@@ -1,5 +1,4 @@
-# ![logo (3)](https://github.com/Advisio-Marketing/dataplus/assets/109807130/13b36080-ada1-4a23-8243-bfcb01627c35)
-
+<img src="https://github.com/Advisio-Marketing/DataPlus/assets/142779458/94e4d6b5-4f8c-43b0-8e31-dd572ae659a6" alt="soc_logo" width="200"/>
 
 ## Přehled
 
