@@ -98,5 +98,5 @@ window.index_conversion.user_data = {
 ## Implementace javascriptové knihovny
 Načtení knihovny po nastavení dat do "automatic_event", ideálně na konec </body> na všechny stránky
 ```javascript
-<script type="text/javascript" src="https://app.[doména].cz/"></script>
+<script type="text/javascript" src="https://apps.[doména].cz/"></script>
 ```
