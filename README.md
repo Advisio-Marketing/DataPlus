@@ -23,5 +23,5 @@ Dataplus je řešení pro server-side tagování, které zajišťuje přesný sb
 Pro implementaci Dataplus zahrňte skript na své webové stránky:
 
 ```html
-<script type="text/javascript" src="https://app.[vaše-doména].cz/"></script>
+<script type="text/javascript" src="https://apps.[vaše-doména].cz/"></script>
 ```
